@@ -21,10 +21,10 @@ class YoutubeVideo2 extends Video2 {
 }
 
 // generar una nueva instancia de la clase y llamamos a sus funciones:
-let miVideo2: Video = new Video("Modificadores de acceso en TypeScript");
+let miVideo2: Video2 = new Video2("Modificadores de acceso en TypeScript");
 
 // Podemos imprimir este parametro porque es público 
-console.log(miVideo.title); 
+console.log(miVideo2.title); 
 
 // generamos otra instancia de la segunda clase
 let miYoutubeVideo2: YoutubeVideo2 = new YoutubeVideo2("Mi Youtube Video");

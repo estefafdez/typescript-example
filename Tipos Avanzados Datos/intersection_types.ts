@@ -13,7 +13,7 @@ class Admin {
 
 // Declaramos ahora una variable que va a tener los dos tipos: User y Admin:
 
-let user: User & Admin; 
+let user: User & Admin = { name: "", permission: 0 }; 
 
 // Usamos las propiedades y los métodos de ambas clases. 
 
@@ -22,4 +22,3 @@ user.permission = 123;
 
 // Si tu quieres saber el tipo de user, te devolverá un tipo User&Admin por lo que no podemos
 // guardar ambos tipos por separados sino que se guardarán juntos. 
-

@@ -2,7 +2,7 @@
 // en lugar de mandar un argumento mandan dos. 
 // El segundo argumento es una propiedad y siempre de tipo string. 
 
-function Decorador2(clsProto : Speakers, propertyName: string) {
+function Decorador2(clsProto : { className?: string }, propertyName: string) {
     console.log('Soy un decorador en ejecución');
     clsProto.className = clsProto.constructor.name; 
     console.log(propertyName);
@@ -14,10 +14,10 @@ function DecoradorStatic(cls:Function, propertyName : string){
 
 // Definimos un decorador dentro de un parámetro de la clase
 class Speakers {
-    @Decorador 
+    declare className: string;
+    @Decorador2 
     numero : number; 
 
     @DecoradorStatic
     static otroParam : string; 
 }
-

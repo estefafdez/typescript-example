@@ -1,0 +1,14 @@
+{
+  "name": "typescript-example",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Runnable TypeScript learning examples",
+  "scripts": {
+    "build": "tsc -p tsconfig.json",
+    "typecheck": "tsc -p tsconfig.json --noEmit",
+    "example": "node scripts/run-example.cjs"
+  },
+  "devDependencies": {
+    "typescript": "7.0.2"
+  }
+}
